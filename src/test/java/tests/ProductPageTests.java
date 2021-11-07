@@ -19,16 +19,16 @@ public class ProductPageTests extends BaseTest {
         mainPage.openMainPage();
     }
 
-    @Story("A")
-    @Description("test")
-    @Test
-    public void navigateViaCatalogAndPutProductIntoCart() {
-        navigateToProductViaCategoryMenu(driver, "Навушники і акустика", "Акустика", 2);
-        productPage.clickBuyButton();
-        cartModal.verifyCartModal();
-        cartModal.closeCartModal();
-        headerMenu.verifyShoppingCartCount("1");
-    }
+//    @Story("A")
+//    @Description("test")
+//    @Test
+//    public void navigateViaCatalogAndPutProductIntoCart() {
+//        navigateToProductViaCategoryMenu(driver, "Навушники і акустика", "Акустика", 2);
+//        productPage.clickBuyButton();
+//        cartModal.verifyCartModal();
+//        cartModal.closeCartModal();
+//        headerMenu.verifyShoppingCartCount("1");
+//    }
 
     @Story("B")
     @Description("test")

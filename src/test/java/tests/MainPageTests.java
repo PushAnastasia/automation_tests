@@ -27,13 +27,13 @@ public class MainPageTests extends BaseTest {
         Assertions.assertTrue(searchResultsPage.isBreadcrumbContainValue("earphones"));
     }
 
-    @Story("2")
-    @Description("test")
-    @Test
-    public void openGeolocationMenuAndVerifyElements() {
-        mainPage.waitAllElementsLoad();
-        headerMenu.verifyGeolocationMenuItems();
-    }
+//    @Story("2")
+//    @Description("test")
+//    @Test
+//    public void openGeolocationMenuAndVerifyElements() {
+//        mainPage.waitAllElementsLoad();
+//        headerMenu.verifyGeolocationMenuItems();
+//    }
 
     @Story("3")
     @Description("test")
@@ -53,23 +53,23 @@ public class MainPageTests extends BaseTest {
         mainPage.verifyEmailFieldValidationMessage("Це поле є обов'язковим для заповнення.");
     }
 
-    @Story("5")
-    @Description("test")
-    @Test
-    public void navigateToCatalogPageViaCategoryLink() {
-        String query = "Ноутбуки";
-        mainPage.selectSideBarMenuCategory(query);
-        mainPage.selectSubCategory(query);
-        cataloguePage.verifyCatalogueTitle(query);
-    }
+//    @Story("5")
+//    @Description("test")
+//    @Test
+//    public void navigateToCatalogPageViaCategoryLink() {
+//        String query = "Ноутбуки";
+//        mainPage.selectSideBarMenuCategory(query);
+//        mainPage.selectSubCategory(query);
+//        cataloguePage.verifyCatalogueTitle(query);
+//    }
 
-    @Story("6")
-    @Description("test")
-    @Test
-    public void verifyChangingGeolocation() {
-        mainPage.waitAllElementsLoad();
-        headerMenu.changeGeolocation("Лозова");
-    }
+//    @Story("6")
+//    @Description("test")
+//    @Test
+//    public void verifyChangingGeolocation() {
+//        mainPage.waitAllElementsLoad();
+//        headerMenu.changeGeolocation("Лозова");
+//    }
 
     @Story("7")
     @Description("test")
@@ -87,16 +87,16 @@ public class MainPageTests extends BaseTest {
         productPage.verifyPageHeader("TV");
     }
 
-    @Story("9")
-    @Description("test")
-    @Test
-    public void putProductIntoCartVerifyCartCount() {
-        String query = "Навушники";
-        mainPage.selectSideBarMenuCategory(query);
-        mainPage.selectSubCategory(query);
-        mainPage.clickBuyButtonByIndex(1);
-        cartModal.verifyCartModal();
-        cartModal.closeCartModal();
-        headerMenu.verifyShoppingCartCount("1");
-    }
+//    @Story("9")
+//    @Description("test")
+//    @Test
+//    public void putProductIntoCartVerifyCartCount() {
+//        String query = "Навушники";
+//        mainPage.selectSideBarMenuCategory(query);
+//        mainPage.selectSubCategory(query);
+//        mainPage.clickBuyButtonByIndex(1);
+//        cartModal.verifyCartModal();
+//        cartModal.closeCartModal();
+//        headerMenu.verifyShoppingCartCount("1");
+//    }
 }
